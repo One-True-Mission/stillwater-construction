@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://one-true-mission.github.io/stillwater-construction/sitemap.xml

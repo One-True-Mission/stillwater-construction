@@ -1,0 +1,6 @@
+ASSET-CHECKLIST.md
+SPEC.md
+*.ps1
+.vscode/
+Thumbs.db
+desktop.ini
