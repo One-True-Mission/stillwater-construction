@@ -1289,6 +1289,12 @@ p { color: var(--ink-muted); }
 
 /* ---------- CTA ---------- */
 .section-cta { padding-top: 40px; padding-bottom: 40px; }
+/* CTA card carries its own background photo under a navy overlay */
+.section-cta .container-deep {
+  background:
+    linear-gradient(105deg, rgba(16, 30, 48, 0.92) 0%, rgba(18, 32, 51, 0.82) 55%, rgba(30, 58, 92, 0.72) 100%),
+    url('assets/cta-bg.jpg') center/cover no-repeat;
+}
 .cta-block {
   text-align: center;
   max-width: 720px;
