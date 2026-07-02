@@ -243,10 +243,10 @@ p { color: var(--ink-muted); }
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 100;
-  background: rgba(246, 243, 236, 0.94);
+  background: rgba(30, 58, 92, 0.97);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
-  border-bottom: 2px solid var(--navy);
+  border-bottom: 2px solid var(--gold);
   box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
 }
 .nav-inner {
@@ -278,7 +278,7 @@ p { color: var(--ink-muted); }
   margin-left: auto;
 }
 .nav-links a {
-  color: var(--ink);
+  color: var(--ivory-light);
   font-weight: 700;
   font-size: 0.92rem;
   letter-spacing: 0.04em;
@@ -286,9 +286,9 @@ p { color: var(--ink-muted); }
   position: relative;
   padding: 4px 0;
 }
-.nav-links a:hover { color: var(--navy); }
+.nav-links a:hover { color: var(--gold-pale); }
 .nav-links a.is-active {
-  color: var(--navy);
+  color: var(--gold-pale);
 }
 .nav-links a.is-active::after {
   content: '';
@@ -301,22 +301,22 @@ p { color: var(--ink-muted); }
 }
 
 .nav-cta {
-  background: var(--navy);
-  color: var(--ivory-light);
+  background: var(--gold);
+  color: var(--navy-dark);
   padding: 11px 20px;
   border-radius: 7px;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.82rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
-  border: 1px solid var(--gold);
-  box-shadow: 0 4px 12px rgba(30, 58, 92, 0.28);
+  border: 1px solid var(--gold-pale);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
 }
 .nav-cta:hover {
-  background: var(--navy-mid);
+  background: var(--gold-pale);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(30, 58, 92, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
 }
 
 .hamburger {
@@ -332,7 +332,7 @@ p { color: var(--ink-muted); }
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--ink);
+  background: var(--ivory-light);
   margin: 0 auto;
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -1716,8 +1716,8 @@ a.contact-value:hover { color: var(--gold-pale); }
   .container { padding: 50px 36px; }
   .nav-logo { height: 44px; }
   .nav-links { display: none; }
-  .nav-cta { display: none; }
-  .hamburger { display: flex; margin-left: auto; }
+  .nav-cta { padding: 9px 14px; font-size: 0.74rem; margin-left: auto; }
+  .hamburger { display: flex; margin-left: 0; }
   .nav-links.is-open {
     display: flex;
     position: absolute;
@@ -1725,10 +1725,10 @@ a.contact-value:hover { color: var(--gold-pale); }
     left: 0;
     right: 0;
     flex-direction: column;
-    background: rgba(246, 243, 236, 0.98);
+    background: rgba(16, 35, 60, 0.98);
     padding: 24px var(--gutter);
     gap: 18px;
-    border-bottom: 2px solid var(--navy);
+    border-bottom: 2px solid var(--gold);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   }
   .hero { min-height: 80vh; padding-top: 120px; }
