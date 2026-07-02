@@ -632,6 +632,10 @@ p { color: var(--ink-muted); }
   text-align: center;
   margin-top: 2.6rem;
 }
+/* 4-card variant: 2x2 so no orphan card at any width */
+.services-grid-4 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 /* ---------- CORE SERVICES (staggered rows with images) ---------- */
 .additional-stack {
@@ -739,6 +743,33 @@ p { color: var(--ink-muted); }
 .additional-text p {
   font-size: 1rem;
   line-height: 1.6;
+}
+.additional-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px 20px;
+  margin-top: 1rem;
+}
+.additional-list li {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.45;
+}
+.additional-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 7px;
+  height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.additional-list--single {
+  grid-template-columns: 1fr;
 }
 .additional-text-lead {
   font-size: 0.82rem;
@@ -1743,6 +1774,7 @@ a.contact-value:hover { color: var(--gold-pale); }
   .stat:last-child { border-bottom: none; padding-bottom: 0; }
   .additional-text { padding: 24px 26px 28px; }
   .additional-text h3 { font-size: 1.3rem; }
+  .additional-list { grid-template-columns: 1fr; }
   .extras-text { padding: 20px 22px 24px; }
   .extras-text h3 { font-size: 1.15rem; }
   .services-closing p { font-size: 1.08rem; }
